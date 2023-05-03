@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
 
+// 20230503 : api 없이 실행하였음 > Start() 실행되지만 콘솔 입력창 없음.. 뭐지?
+
 public class ChatGPT : MonoBehaviour
 {
     // OpenAI API endpoint URL
@@ -13,7 +15,7 @@ public class ChatGPT : MonoBehaviour
     void Start()
     {
         // Print prompt message to console
-        Debug.Log("ChatGPT와 대화하기Test 콘솔에서 진행");
+        Debug.Log("ChatGPT와 대화하기!Test 콘솔에서 진행");
 
         // Start coroutine to read input from console
         StartCoroutine(ReadConsoleInput());
